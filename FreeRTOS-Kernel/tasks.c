@@ -42,7 +42,6 @@
 #include "stack_macros.h"
 
 #include "conswitch.h"
-
 unsigned long long CONTEXT_SWITCH_COUNT = 0ULL;
 
 /* Lint e9021, e961 and e750 are suppressed as a MISRA exception justified
