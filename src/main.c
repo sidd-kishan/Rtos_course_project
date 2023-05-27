@@ -93,8 +93,8 @@ int main(){
                 3,
                 &context_switch
         );
-
-        uint32_t task_tempsense = xTaskCreate(
+        
+         uint32_t task_tempsense = xTaskCreate(
                 TEMP_SENSE,
                 "temp",
                 2048,
@@ -102,6 +102,8 @@ int main(){
                 2,
                 &temp_sense
         );
+
+       
 
         vTaskStartScheduler();
 
