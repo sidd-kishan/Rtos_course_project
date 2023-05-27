@@ -49,16 +49,6 @@ void PRINT_CONTEXT_SWITCH(){
         }
 }
 
-void TEMP_SENSE(){
-        for(;;){
-                const float conversion_factor = 3.3f / (1 << 12);
-                float result = (float)adc_read() * conversion_factor;
-                float tempC = 27.0f - (result - 0.706f) / 0.001721f;
-                printf("Onboard temperature = %.02f %c\n", tempC, TEMPERATURE_UNITS);
-                vTaskDelay(2000);
-        }
-}
-
 int main(){
         stdio_init_all();
         adc_init();
