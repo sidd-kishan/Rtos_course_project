@@ -8,4 +8,4 @@ Pico sdk path and FreeRTOS Kernel paths are set as environment variables.
 Setting them is required for CMake to build the project.
 
 
-<img src="./images/serialmonitoroutput.png" title="Std output"/>
+<img src="./images/serialmonitoroutput.png" alttext="STD OUTPUT" title="Std output"/>
